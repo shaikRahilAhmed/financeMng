@@ -1,0 +1,62 @@
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  text-align: center;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+.plus {
+  color: green;
+}
+.minus {
+  color: red;
+}
+.form input, .form select {
+  margin: 5px;
+  padding: 8px;
+}
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+.delete-btn {
+  margin-left: 10px;
+  color: red;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.inc-exp {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.filters {
+  margin: 10px 0;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  .form input, .filters input, .filters select {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .inc-exp {
+    flex-direction: column;
+  }
+}
